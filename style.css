@@ -1,7 +1,7 @@
-/* Import Google Fonts */
+/*GOOGLE FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Libre+Baskerville:wght@400;700&family=Merriweather:wght@400;600&family=Open+Sans:wght@300;400&display=swap');
 
-/* General Reset */
+/*GENERAL*/
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +10,50 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Logo / Main Title */
+/*NAVBAR*/
+.navbar {
+    background-color: #F5EFE6;
+    border-bottom: 1px solid #C2A46F;
+    padding: 15px 40px;
+}
+
+/*Logo*/
+.nav-logo {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    color: #4A3B2A;
+    display: inline-block;
+}
+
+/*Nav links container*/
+.nav-links {
+    float: right;
+}
+
+/* Individual links */
+.nav-links a {
+    text-decoration: none;
+    color: #4A3B2A;
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+    color: #A68A64;
+}
+
+/* Clear float */
+.navbar::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*LOGO / TITLE*/
 .logo {
     font-family: 'Cinzel', serif;
     font-size: 40px;
@@ -19,7 +62,7 @@ body {
     margin: 20px 0;
 }
 
-/* Section Headings */
+/*SECTION HEADINGS*/
 .section-title {
     font-family: 'Libre Baskerville', serif;
     text-transform: uppercase;
@@ -29,7 +72,7 @@ body {
     margin: 30px 0 15px;
 }
 
-/* Cards / Sections */
+/*CARDS / SECTIONS*/
 .card {
     background-color: #F5EFE6;
     margin: 20px auto;
@@ -39,19 +82,25 @@ body {
     border: 1px solid #C2A46F;
 }
 
-/* Divider Line */
+/* Divider */
 .divider {
     height: 1px;
     background-color: #C2A46F;
     margin: 15px 0;
 }
 
-/* Menu Item */
+/*MENU ITEMS*/
 .menu-item {
     margin-bottom: 15px;
 }
 
-/* Item Name */
+/* Clear float */
+.menu-item::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .item-name {
     font-family: 'Merriweather', serif;
     font-size: 18px;
@@ -59,28 +108,58 @@ body {
     color: #4A3B2A;
 }
 
-/* Description */
+.price {
+    float: right;
+    font-family: 'Merriweather', serif;
+    font-weight: 400;
+    color: #A68A64;
+}
+
 .item-description {
-    font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    color: #000000;
     margin: 5px 0;
 }
 
-/* Price */
-.price {
+/*CONTACT PAGE*/
+.contact-card {
+    max-width: 600px;
+}
+
+.contact-intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form */
+.contact-form label {
     font-family: 'Merriweather', serif;
-    font-weight: 400; /* lighter than item name */
-    color: #A68A64;
-    float: right;
+    color: #4A3B2A;
+    display: block;
+    margin-top: 10px;
 }
 
-/* Highlight Text */
-.highlight {
-    color: #A68A64;
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #C2A46F;
+    border-radius: 5px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFFFF;
 }
 
-/* Buttons (Optional) */
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Contact info */
+.contact-info {
+    text-align: center;
+}
+
+/*BUTTONS*/
 .button {
     background-color: #C2A46F;
     color: #FFFFFF;
@@ -89,13 +168,19 @@ body {
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 15px;
 }
 
 .button:hover {
     background-color: #A68A64;
 }
 
-/* Footer */
+/* HIGHLIGHTs */
+.highlight {
+    color: #A68A64;
+}
+
+/* FOOTER */
 .footer {
     text-align: center;
     padding: 15px;
