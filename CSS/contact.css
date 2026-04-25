@@ -1,0 +1,23 @@
+.rating-row {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.rating-btn {
+  flex: 1;
+  background: #F5EDD8;
+  border: 1.5px solid #d4c9ae;
+  border-radius: 6px;
+  padding: 0.7rem 0;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+  text-align: center;
+}
+
+.rating-btn:hover,
+.rating-btn.selected {
+  background: #C9B48A;
+  border-color: #C9B48A;
+}
