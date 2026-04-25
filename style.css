@@ -1,3 +1,104 @@
-h1 {
-  text-align: center;
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Libre+Baskerville:wght@400;700&family=Merriweather:wght@400;600&family=Open+Sans:wght@300;400&display=swap');
+
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E8DCCB;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Logo / Main Title */
+.logo {
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+    color: #4A3B2A;
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Section Headings */
+.section-title {
+    font-family: 'Libre Baskerville', serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #4A3B2A;
+    text-align: center;
+    margin: 30px 0 15px;
+}
+
+/* Cards / Sections */
+.card {
+    background-color: #F5EFE6;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+    border: 1px solid #C2A46F;
+}
+
+/* Divider Line */
+.divider {
+    height: 1px;
+    background-color: #C2A46F;
+    margin: 15px 0;
+}
+
+/* Menu Item */
+.menu-item {
+    margin-bottom: 15px;
+}
+
+/* Item Name */
+.item-name {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #4A3B2A;
+}
+
+/* Description */
+.item-description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    margin: 5px 0;
+}
+
+/* Price */
+.price {
+    font-family: 'Merriweather', serif;
+    font-weight: 400; /* lighter than item name */
+    color: #A68A64;
+    float: right;
+}
+
+/* Highlight Text */
+.highlight {
+    color: #A68A64;
+}
+
+/* Buttons (Optional) */
+.button {
+    background-color: #C2A46F;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #A68A64;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    color: #4A3B2A;
+    font-size: 14px;
 }
