@@ -4,55 +4,114 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gallery — Shofuku</title>
-  <link rel="stylesheet" href="..\CSS\base.css" />
-  <link rel="stylesheet" href="..\CSS\gallery.css" />
+  <link rel="stylesheet" href="../CSS/base.css" />
+  <link rel="stylesheet" href="../CSS/gallery.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
+  <!-- Navigation -->
   <nav>
-    <a href="#" class="logo">SHOFUKU</a>
+    <a href="../index.html" class="logo">SHOFUKU</a>
     <ul>
-      <li><a href="..\index.html">Home</a></li>
-      <li><a href="..\HTML\menu.html">Menu</a></li>
-      <li><a href="..\HTML\order.html">Order</a></li>
-      <li><a href="..\HTML\gallery.html" class="active">Gallery</a></li>
-      <li><a href="..\HTML\contact.html">Contact</a></li>
-      <li><a href="..\HTML\about.html">About</a></li>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
     </ul>
   </nav>
-  <h1 class="headline">SHOFUKU GALLERY</h1>
-  <table>
-    <tr>
-        <td colspan="2"><img src="..\Images\PDS00230.jpg"></td>
-    </tr>
-    <tr>
-        <td><img src="..\Images\PDS00272.jpg"></td>
-        <td><img src="..\Images\PDS00351.jpg"></td>
-    </tr>
-    <tr>
-        <td><img src="..\Images\PDS00328.jpg"></td>
-        <td><img src="..\Images\PDS00435.jpg"></td>
-    </tr>
-    <tr>
-        <td colspan="2"><img src="..\Images\PDS00148.jpg"></td>
-    </tr>
-    <tr>
-        <td><img src="..\Images\PDS00458.jpg"></td>
-        <td><img src="..\Images\PDS00288.jpg"></td>
-    </tr>
-    <tr>
-        <td><img src="..\Images\PDS00241.jpg"></td>
-        <td><img src="..\Images\PDS00251.jpg"></td>
-    </tr>
-  </table>
-  </section>
+
+    <header class="gallery-header">
+    <h1>Gallery</h1>
+    <p>A glimpse into the world of Shofuku</p>
+  </header>
+ 
+  <main class="gallery-wrap">
+    <table class="gallery-table">
+      <tbody>
+ 
+        <!-- Full-width feature row -->
+        <tr>
+          <td colspan="2" class="wide">
+            <div class="gallery-cell">
+              <img src="../Images/PDS00230.jpg" alt="Image" />
+            </div>
+          </td>
+        </tr>
+ 
+        <!-- Two-column rows -->
+        <tr>
+          <td>
+            <div class="gallery-cell">
+              <img src="../Images/PDS00272.jpg" alt="Image" />
+            </div>
+          </td>
+          <td>
+            <div class="gallery-cell">
+              <img src="../Images/PDS00351.jpg" alt="Image" />
+            </div>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>
+            <div class="gallery-cell">
+              <img src="../Images/PDS00328.jpg" alt="Image" />
+            </div>
+          </td>
+          <td>
+            <div class="gallery-cell">
+              <img src="../Images/PDS00435.jpg" alt="Image" />
+            </div>
+          </td>
+        </tr>
+ 
+        <!-- Full-width feature row -->
+        <tr>
+          <td colspan="2" class="wide">
+            <div class="gallery-cell">
+              <img src="../Images/PDS00148.jpg" alt="Image" />
+            </div>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>
+            <div class="gallery-cell">
+              <img src="../Images/PDS00458.jpg" alt="Image" />
+            </div>
+          </td>
+          <td>
+            <div class="gallery-cell">
+              <img src="../Images/PDS00288.jpg" alt="Image" />
+            </div>
+          </td>
+        </tr>
+ 
+        <tr>
+          <td>
+            <div class="gallery-cell">
+              <img src="../Images/PDS00241.jpg" alt="Image" />
+            </div>
+          </td>
+          <td>
+            <div class="gallery-cell">
+              <img src="../Images/PDS00251.jpg" alt="Image" />
+            </div>
+          </td>
+        </tr>
+ 
+      </tbody>
+    </table>
+  </main>
+  
+  <!-- Footer -->
   <footer>
     <div class="footer-logo">SHOFUKU</div>
     <div>
       <h4>Address</h4>
-      <address>
-       Manila, Phillipines
-      </address>
+      <address>The Hood, Sto Rosario Street, Barangay Sto Domingo, Angeles City, Philippines 2009</address>
     </div>
     <div>
       <h4>Social Media</h4>
@@ -62,9 +121,11 @@
       </div>
     </div>
     <div>
-      <h4>Email Us</h4>
+      <h4>Contact Us</h4>
       <p><a href="mailto:shofuku.ph@gmail.com">shofuku.ph@gmail.com</a></p>
+      <p>+63 994 931 0523</p>
     </div>
   </footer>
+
 </body>
 </html>

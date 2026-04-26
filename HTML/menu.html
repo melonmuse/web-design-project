@@ -1,141 +1,115 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Shoufuku</title>
-         <link rel="stylesheet" href="menu.css">
-    </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Shofuku</title>
+  <link rel="stylesheet" href="../CSS/base.css" />
+  <link rel="stylesheet" href="../CSS/menu.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
 <body>
-     <nav>
-        <a href="index.html">Home</a>
-        <a href="menu.html">Menu</a>
-        <a href="about.html">About</a>
-        <a href="orderBillSummary.html">Order/Bill Summary</a>
-        <a href="moreInquire.html">More/Inquire</a>
-        <a href="gallery.html">Gallery</a>
-    </nav>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="../index.html" class="logo">SHOFUKU</a>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <header class="menu-hero">
+    <h1>Our Menu</h1>
+    <p>Rooted in tradition. Refined with care.</p>
+  </header>
+
+  <main class="menu-page">
 
     <section class="menu-section">
-        <h1>MENU</h1>
-        <section class="APPETIZERS">
-        <h2>APPETIZERS</h2>
-        <div class="menu-item">
-        <img src="Okonomiyaki.jpg" alt="Okonomiyaki">
-
-        <div class="menu-info">
-         <div class="menu-top">
-             <h2>OKONOMIYAKI</h2>
-                <span>159</span>
-            </div>
-                    <p>Our signature Japanese savory pancake with an option of adding cheese.</p>
-            </div>
+      <h2 class="menu-category">Small Plates</h2>
+      <div class="menu-list">
+        <div class="menu-entry">
+          <div class="menu-entry-name">Gyoza <span class="menu-entry-sub">Pan-fried pork &amp; cabbage dumplings</span></div>
+          <div class="menu-entry-price">₱180</div>
         </div>
-
-        <div class="menu-item">
-            <img src="Tempura.jpg" alt="Tempura">
-            <div class="menu-info">
-                <div class="menu-top">
-                    <h2>TEMPURA</h2>
-                    <span>169</span>
-                </div>
-                <P>tender shrimp dipped in a light batter and fried to golden perfection.</P>
-            </div>
+        <div class="menu-entry">
+          <div class="menu-entry-name">Takoyaki <span class="menu-entry-sub">Octopus balls with bonito &amp; mayo</span></div>
+          <div class="menu-entry-price">₱195</div>
         </div>
-
-        <div class="menu-item">
-            <img src="Gyoza.jpg" alt="GYOZA">
-            <div class="menu-info">
-                <div class="menu-top">
-                    <h2>GYOZA</h2>
-                    <span>188</span>
-                </div>
-                <p>pan-seared dumplins stuffed with a savory, finely minced filling.</p>
-            </div>
+        <div class="menu-entry">
+          <div class="menu-entry-name">Karaage <span class="menu-entry-sub">Japanese fried chicken, kewpie mayo</span></div>
+          <div class="menu-entry-price">₱220</div>
         </div>
-        </section>
-
-        <section class="doublebowls">
-        <h2>DOUBLE BOWLS<br>SERVED WITH JAPANESE RICE & MISO SOUP</h2>
-        <div class="menu-item">
-            <img src="Gyudon.jpg" alt="GYUDON">
-            <div class="menu-info">
-                <div class="menu-top">
-                    <h2>GYUDON</h2>
-                    <span>209</span>
-                </div>
-                <P>thinly sliced fatty beef and onions simmered in a savory-sweet soy sauce</P>
-            </div>
-        </div>
-
-        <div class="menu-item">
-            <img src="Katsudon.jpg" alt="KATSUDON">
-            <div class="menu-info" >
-                 <div class="menu-top">
-                    <h2>KATSUDON</h2>
-                    <span>209</span>
-                </div>
-                <p>Japanese-style fried chiken.</p>
-            </div>
-        </div>
-
-        <div class="menu-item">
-            <img src="Tonkatsu.jpg" alr="TONKATSU">
-            <div class="menu-info" >
-                 <div class="menu-top">
-                    <h2>TONKATSU</h2>
-                    <span>209</span>
-                </div>
-                <p>pork cutlet served with shredded cabbage and home made tonkatsu sauce.</p>
-            </div>
-        </div>
-
-        <div class="menu-item">
-            <img src="Karaagedon.png" alr="KARAAGEDON">
-            <div class="menu-info" >
-                 <div class="menu-top">
-                    <h2>KARAAGEDON</h2>
-                    <span>229</span>
-                </div>
-            </div>
-        </div>
-        <section class="SALAD">
-            <div class="menu-item">
-            <img src="Kani Salad.png" alr="SHOFUKU CRAB SALAD">
-            <div class="menu-info" >
-                 <div class="menu-top">
-                    <h2>SHOFUKU CRAB SALAD</h2>
-                    <span>249</span>
-                </div>
-            </div>
-        </div>
-        
-        </section>
-       <section class="side-extras">
-
-            <h2>SIDS AND EXTRAS</h2>
-
-            <ul class="sides-list">
-                <li><span>CABBAGE</span> <span>35</span></li>
-                <li><span>MISO SOUP</span> <span>35</span></li>
-                <li><span>RICE</span> <span>30</span></li>
-            </ul>
-        </section>
-
-        <section class="drinks">
-
-            <h2>DRINKS</h2>
-
-            <ul class="drink-list">
-                <li><span>Iced Green Apple</span> <span>105</span></li>
-                <li><span>Iced Lychee</span> <span>105</span></li>
-                <li><span>Bottled Water</span> <span>30</span></li>
-                <li><span>Soda</span> <span>60</span></li>
-            </ul>
-
-            <p class="note">
-                ASK SERVER FOR <strong>LIQUOR</strong> AVAILABILITY
-            </p>
-
-            </section>       
+      </div>
     </section>
+
+    <section class="menu-section">
+      <h2 class="menu-category">Mains</h2>
+      <div class="menu-list">
+        <div class="menu-entry">
+          <div class="menu-entry-name">Gyudon <span class="menu-entry-sub">Beef &amp; onion over steamed rice</span></div>
+          <div class="menu-entry-price">₱320</div>
+        </div>
+        <div class="menu-entry">
+          <div class="menu-entry-name">Katsudon <span class="menu-entry-sub">Breaded pork cutlet, egg, dashi rice bowl</span></div>
+          <div class="menu-entry-price">₱350</div>
+        </div>
+        <div class="menu-entry">
+          <div class="menu-entry-name">Okonomiyaki <span class="menu-entry-sub">Japanese savory pancake, pork &amp; negi</span></div>
+          <div class="menu-entry-price">₱310</div>
+        </div>
+        <div class="menu-entry">
+          <div class="menu-entry-name">Tonkatsu <span class="menu-entry-sub">Crispy pork cutlet, tonkatsu sauce, cabbage</span></div>
+          <div class="menu-entry-price">₱340</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <h2 class="menu-category">Drinks</h2>
+      <div class="menu-list">
+        <div class="menu-entry">
+          <div class="menu-entry-name">Mugicha <span class="menu-entry-sub">Roasted barley tea, hot or cold</span></div>
+          <div class="menu-entry-price">₱80</div>
+        </div>
+        <div class="menu-entry">
+          <div class="menu-entry-name">Yuzu Lemonade <span class="menu-entry-sub">Fresh yuzu, honey, sparkling water</span></div>
+          <div class="menu-entry-price">₱120</div>
+        </div>
+        <div class="menu-entry">
+          <div class="menu-entry-name">Matcha Latte <span class="menu-entry-sub">Ceremonial grade, oat or whole milk</span></div>
+          <div class="menu-entry-price">₱140</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-logo">SHOFUKU</div>
+    <div>
+      <h4>Address</h4>
+      <address>The Hood, Sto Rosario Street, Barangay Sto Domingo, Angeles City, Philippines 2009</address>
+    </div>
+    <div>
+      <h4>Social Media</h4>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/share/18RxdQk1fX/?mibextid=wwXIfr" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/shofukuph?igsh=MXZ4aWpyaHN4M3IxZQ==" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div>
+      <h4>Contact Us</h4>
+      <p><a href="mailto:shofuku.ph@gmail.com">shofuku.ph@gmail.com</a></p>
+      <p>+63 994 931 0523</p>
+    </div>
+  </footer>
+
 </body>
 </html>
