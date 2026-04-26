@@ -1,4 +1,4 @@
- *{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -10,7 +10,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* NAVIGATION */
+
 nav {
   background-color: #6e0f2d;
   padding: 15px 30px;
@@ -29,7 +29,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* MAIN MENU CONTAINER */
+
 .menu-section {
   width: 85%;
   max-width: 1000px;
@@ -47,7 +47,7 @@ nav a:hover {
   letter-spacing: 3px;
 }
 
-/* CATEGORY TITLES */
+
 .menu-section h2 {
   font-family: Georgia, serif;
   text-transform: uppercase;
@@ -66,7 +66,6 @@ nav a:hover {
   border-top: 1px solid rgba(255,255,255,0.5);
 }
 
-/* MENU ITEMS WITH IMAGE LEFT */
 .menu-item {
   display: flex;
   align-items: center;
@@ -112,7 +111,7 @@ nav a:hover {
   color: #eee;
 }
 
-/* SIDES AND DRINKS LIST */
+
 
 .side-extras{
     text-align: center;
@@ -125,7 +124,7 @@ nav a:hover {
   margin-bottom: 30px;
 }
 
-/* remove bullets */
+
 .sides-list,
 .drink-list {
   list-style: none;
@@ -133,7 +132,7 @@ nav a:hover {
   margin: 0;
 }
 
-/* center each row */
+
 .sides-list li,
 .drink-list li {
   display: flex;
@@ -146,13 +145,13 @@ nav a:hover {
   margin: 10px 0;
 }
 
-/* add dash */
+
 .sides-list li span:first-child::after,
 .drink-list li span:first-child::after {
   content: " - ";
 }
 
-.note {
+.note{
   margin-top: 45px;
   font-size: 18px;
   letter-spacing: 3px;
