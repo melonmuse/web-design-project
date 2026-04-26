@@ -1,0 +1,177 @@
+nav {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  z-index: 10;
+  background-color: #6e0f2d;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.home-page {
+  width: 100%;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-image {
+  width: 60%;
+  height: 100%;
+  display: flex;
+}
+
+.hero-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-content {
+  width: 40%;
+  padding: 120px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.hero-content h1 {
+  font-family: Georgia, serif;
+  font-size: 56px;
+  line-height: 1.2;
+  color: white;
+}
+
+.hero-tagline {
+  margin-top: 30px;
+  padding: 12px 25px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  width: fit-content;
+}
+
+.hero-tagline p {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* BANNER */
+.banner-image img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ABOUT */
+.aboutUs {
+  background-color: #6e0f2d;
+  padding: 80px 70px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.aboutUs-title h2,
+.menu-heading h2 {
+  font-family: Georgia, serif;
+  font-size: 48px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.about-text {
+  max-width: 450px;
+  line-height: 1.6;
+}
+
+/* MENU HEADING */
+.menu-heading {
+  background-color: #6e0f2d;
+  text-align: center;
+  padding: 50px 20px 30px;
+}
+
+/* MENU GRID */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.menu-item {
+  position: relative;
+  height: 330px;
+  overflow: hidden;
+}
+
+.menu-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-label p {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 25px 45px;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* CONTACT */
+.contact {
+  background-color: #6e0f2d;
+  padding: 90px 40px;
+  text-align: center;
+}
+
+.contact-info h2 {
+  font-family: Georgia, serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+
+.contact-info address {
+  font-style: normal;
+  line-height: 1.7;
+  font-size: 16px;
+}
