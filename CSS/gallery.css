@@ -1,16 +1,60 @@
-table {
-    width: 100%;
-    height: 100%;
+.gallery-header {
+  background-color: var(--crimson-deep);
+  padding: 4rem 3rem 3rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(201, 180, 138, 0.15);
 }
-img {
-    width: 100%;
-    padding: 10px;
+
+.gallery-header h1 {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--white);
 }
-h1 {
-    text-align: center;
-    font-family: 'Prata', serif;
-    font-size: 2.8rem;
-    line-height: 1.1;
-    text-transform: uppercase;
-    padding: 10px;
+
+.gallery-header p {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  color: var(--cream);
+  opacity: 0.75;
+  letter-spacing: 0.08em;
+}
+
+/* ─── Gallery Table ─────────────────────────────────── */
+.gallery-wrap {
+  padding: 3rem;
+  flex: 1;
+}
+
+.gallery-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;      
+}
+
+/* All cells */
+.gallery-table td {
+  padding: 4px;
+  height: 500px;
+  vertical-align: top;
+}
+
+/* Cells that span both columns */
+.gallery-table td.wide {
+  padding: 4px;
+}
+
+/* Image wrapper inside each cell */
+.gallery-cell {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--crimson-deep);
+}
+
+.gallery-cell img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: block;
 }

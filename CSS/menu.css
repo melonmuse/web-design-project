@@ -1,186 +1,77 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.menu-hero {
+  background-color: var(--crimson-deep);
+  padding: 5rem 4rem;
+  text-align: center;
+  border-bottom: 1px solid rgba(201, 180, 138, 0.15);
 }
 
-body {
-  background-color: #111;
-  color: white;
-  font-family: Arial, sans-serif;
+.menu-hero h1 {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--white);
 }
 
-
-nav {
-  background-color: #6e0f2d;
-  padding: 15px 30px;
-  display: flex;
-  justify-content: flex-end;
-  gap: 25px;
+.menu-hero p {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  color: var(--cream);
+  opacity: 0.75;
+  letter-spacing: 0.06em;
+  font-style: italic;
 }
 
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 16px;
+.menu-page {
+  flex: 1;
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  width: 100%;
 }
-
-nav a:hover {
-  text-decoration: underline;
-}
-
 
 .menu-section {
-  width: 85%;
-  max-width: 1000px;
-  margin: 60px auto;
-  padding: 50px;
-  background-color: #6e0f2d;
-  border-radius: 8px;
+  margin-bottom: 3.5rem;
 }
 
-.menu-section > h1 {
-  font-family: Georgia, serif;
-  font-size: 56px;
-  text-align: center;
-  margin-bottom: 50px;
-  letter-spacing: 3px;
-}
-
-
-.menu-section h2 {
-  font-family: Georgia, serif;
+.menu-category {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  color: var(--gold);
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid rgba(201, 180, 138, 0.25);
 }
 
-.APPETIZERS > h2,
-.doublebowls > h2,
-.SALAD > h2,
-.sides-extras > h2,
-.drinks > h2 {
-  text-align: center;
-  font-size: 30px;
-  margin: 50px 0 30px;
-  padding-top: 25px;
-  border-top: 1px solid rgba(255,255,255,0.5);
-}
-
-.menu-item {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  margin-bottom: 25px;
-  padding: 18px;
-  background-color: rgba(0,0,0,0.22);
-  border-radius: 8px;
-}
-
-.menu-item img {
-  width: 160px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 6px;
-  background-color: #222;
-  flex-shrink: 0;
-}
-
-.menu-info {
-  flex: 1;
-}
-
-.menu-top {
+.menu-entry {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+  align-items: baseline;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  gap: 1rem;
 }
 
-.menu-top h2 {
-  font-size: 24px;
+.menu-entry-name {
+  font-size: 1rem;
+  color: var(--white);
 }
 
-.menu-top span {
-  font-size: 22px;
-  font-weight: bold;
+.menu-entry-sub {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--cream);
+  opacity: 0.65;
+  margin-top: 0.2rem;
+  font-style: italic;
 }
 
-.menu-info p {
-  margin-top: 8px;
-  line-height: 1.5;
-  color: #eee;
-}
-
-
-
-.side-extras{
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-.drinks {
-  text-align: center;
-  margin-top: 50px;
-  margin-bottom: 30px;
-}
-
-
-.sides-list,
-.drink-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-.sides-list li,
-.drink-list li {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  font-size: 22px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  margin: 10px 0;
-}
-
-
-.sides-list li span:first-child::after,
-.drink-list li span:first-child::after {
-  content: " - ";
-}
-
-.note{
-  margin-top: 45px;
-  font-size: 18px;
-  letter-spacing: 3px;
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  nav {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  .menu-section {
-    width: 92%;
-    padding: 30px 20px;
-  }
-
-  .menu-item {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .menu-item img {
-    width: 100%;
-    height: 220px;
-  }
-
-  .menu-top {
-    flex-direction: column;
-    gap: 5px;
-  }
+.menu-entry-price {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  color: var(--gold);
+  white-space: nowrap;
+  flex-shrink: 0;
 }
