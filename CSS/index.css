@@ -1,4 +1,38 @@
-/* HERO */
+nav {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  z-index: 10;
+  background-color: #6e0f2d;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+ {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.home-page {
+  width: 100%;
+}
+
 .hero {
   min-height: 100vh;
   background-color: #111;
@@ -49,7 +83,7 @@
   text-align: center;
 }
 
-/* BANNER */
+
 .banner-image img {
   width: 100%;
   height: 320px;
@@ -57,7 +91,7 @@
   display: block;
 }
 
-/* ABOUT */
+
 .aboutUs {
   background-color: #6e0f2d;
   padding: 80px 70px;
@@ -79,14 +113,14 @@
   line-height: 1.6;
 }
 
-/* MENU HEADING */
+
 .menu-heading {
   background-color: #6e0f2d;
   text-align: center;
   padding: 50px 20px 30px;
 }
 
-/* MENU GRID */
+
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -121,7 +155,6 @@
   text-align: center;
 }
 
-/* CONTACT */
 .contact {
   background-color: #6e0f2d;
   padding: 90px 40px;
